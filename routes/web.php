@@ -20,3 +20,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['name' => 'front'],function (){
+
+});
+
+//admin
+Route::group(['name' => 'admin_login'],function (){
+    require_once (__DIR__.'\admin\login.php');
+});
+
+Route::group(['name' => 'admin','prefix' => 'admin'],function (){
+});
