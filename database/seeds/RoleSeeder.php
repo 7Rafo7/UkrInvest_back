@@ -12,12 +12,13 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-
+        $this->admin();
     }
 
     private function admin(){
         $role = new Role();
-//        $role-
+        $role->name=('admin');
+        $role->save();
     }
 
 }

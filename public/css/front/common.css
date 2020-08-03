@@ -1,0 +1,36 @@
+.no-mobile {
+    display: none!important;
+}
+
+@media (min-width: 768px) {
+    .no-mobile {
+        display: inherit!important;
+    }
+
+    .no-tablet {
+        display: none!important;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .no-tablet {
+        display: inherit!important;
+    }
+
+    .no-laptop {
+        display: none!important;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .no-laptop {
+        display: inherit!important;
+    }
+
+    .no-desktop {
+        display: none!important;
+    }
+}

@@ -1,0 +1,65 @@
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(117, 193, 79);
+}
+
+.modal .section-1 {
+    display: flex;
+    height: 80px;
+    width: 15%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.modal .section-1 a {
+    text-decoration: none;
+}
+
+.modal .section-1 a i {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.modal .section-1 a i:hover {
+    /*color: rgba(255,255,255,0.8);*/
+    color: rgb(0, 28, 29);
+}
+
+
+/* responsive-start*/
+@media screen and (max-width: 1024px) {
+    .modal .section-1 {
+        width: 20%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 70px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .modal .section-1 {
+        width: 30%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .modal .section-1 {
+        width: 40%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 60px;
+    }
+}
+/* responsive-end*/

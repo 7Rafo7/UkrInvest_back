@@ -1,0 +1,1056 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+/*------------home eji styleri skizb-------------*/
+/*headeri taki nkari skizb*/
+.home-banner {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    padding: 20px;
+    /*background-image: url("../img/front/traffic-bg-4.jpg");*/
+    z-index: 1;
+}
+
+.home-banner .section {
+    position: relative;
+}
+
+.home-banner .section-1 {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+}
+
+.home-banner .section-1 a {
+    text-decoration: none;
+}
+
+.home-banner .section-1 a i {
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.home-banner .section-1 a i:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.home-banner .section-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-banner .section-2 h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+.home-banner .section-3 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 70px;
+}
+
+.home-banner .section-3 .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.home-banner .section-3 .slider img {
+    width: 30px;
+    height: auto;
+}
+
+.home-banner .section-3 .slider .ketik-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.home-banner .section-3 .ketik-section .ketik-white {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.home-banner .section-3 .ketik-section .ketik {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*headeri taki nkari verj*/
+
+/* missioni descriptioni skizb */
+.mission-description {
+    padding-top: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mission-description .sections {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mission-description .sections .section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.mission-description .sections .section-1 img {
+    width: 35px;
+    height: 30px;
+}
+
+.mission-description .sections .section-1 h3 {
+    margin-left: 10px;
+}
+
+.mission-description .sections .section-2 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mission-description .sections .section-2 p {
+    text-align: left;
+    font-weight: 400;
+}
+
+.mission-description .sections .section-3 {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    padding-top: 10px;
+}
+
+.mission-description .sections .section-3 a {
+    text-decoration: none;
+    color: rgb(50, 150, 50);
+}
+
+.mission-description .sections .section-3 a:hover {
+    opacity: 0.8;
+}
+
+/*missioni descriptioni verj */
+
+/*servicesi skizb*/
+.home-services {
+    margin-top: 100px;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.home-services .section-1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.home-services .section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-services .services-card {
+    margin: 10px 10px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-services .services-card .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 475px;
+    height: 300px;
+}
+
+.home-services .services-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.home-services .card-1 {
+    background-image: url("../img/light.jpg");
+}
+
+.home-services .card-2 {
+    background-image: url("../img/sign.jpg");
+}
+
+.home-services .card-3 {
+    background-image: url("../img/marks.jpg");
+}
+
+.home-services .card-4 {
+    background-image: url("../img/equipment.jpg");
+}
+
+.home-services .services-card h4 {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* servicesi verj*/
+
+/*gallery skizb*/
+.home-projects-gallery {
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-projects-gallery .section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.home-projects-gallery .gallery-slider {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-bottom: 100px;
+}
+/*gallery verj*/
+
+/*news-press skizb*/
+.news-press {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.news-press .news-section-1 {
+    font-weight: 600;
+}
+
+.news-press .news-section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.news-press .news-section-2 .section-1 {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 50%;
+}
+
+.news-press .news-section-2 .section-1 .news-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(220, 220, 220);
+    width: 47%;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+.news-press .news-section-2 .section-1 .news-card .date {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(117, 193, 79);
+    border-radius: 5px;
+
+}
+
+.news-press .news-section-2 .section-1 .news-card .content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.news-press .news-section-2 .section-1 .news-card .content h3 {
+    text-align: left;
+}
+
+.news-press .news-section-2 .section-1 .news-card .icon {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: rotate(180deg);
+    margin-right: -10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.news-press .news-section-2 .section-1 .news-card .icon i {
+    color: rgb(255, 255, 255);
+}
+
+.news-press .news-section-2 .section-2 {
+    display: flex;
+    width: 3%;
+    height: 100px;
+    margin-right: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(220, 220, 220);
+    border-radius: 5px;
+}
+
+.news-press .news-section-2 .section-2 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 28, 29);
+    margin-top: 5px;
+}
+
+.news-press .news-section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.news-press .news-section-3 .press {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.news-press .news-section-3 .press .press-card {
+    margin: 10px;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 220, 220);
+}
+
+.news-press .news-section-3 .press .press-card .card-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.news-press .news-section-3 .press .press-card .card-content {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.news-press .news-section-3 .press .press-card .card-content h2, h5 {
+    font-weight: 500;
+}
+
+.news-press .news-section-3 .press .press-card .card-content h2 {
+    margin-top: 10px;
+}
+
+.news-press .news-section-3 .press .press-card .card-btn img {
+    margin-bottom: -20px;
+    height: 40px;
+}
+
+/*news-press-i verj*/
+
+/*contact-skizb*/
+.contact {
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .info-section {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.contact .info-section h3 {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.contact .input-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .input-section .input {
+    display: block;
+    width: 25%;
+    height: calc(24px + 12px + 2px);
+    padding: 6px 12px;
+    margin: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(73, 80, 83);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 4px;
+}
+
+.contact .input-section textarea {
+    display: block;
+    width: 76%;
+    height: 150px;
+    padding: 6px 12px;
+    margin: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(73, 80, 83);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 4px;
+}
+
+.contact .contact-btn {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.contact .contact-btn a {
+    text-decoration: none;
+}
+
+.contact .contact-btn .btn {
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 6px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 30px;
+}
+
+.contact .contact-btn .send-btn {
+    padding: 10px 35px 10px 35px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(117, 193, 79);
+    border-color: rgb(117, 193, 79);
+}
+
+/*contact-verj*/
+
+
+/*------------home eji styleri verj-------------*/
+
+/*--------------projetcs eji styleri skizb--------------*/
+.project-banner {
+    position: relative;
+    height: 902px;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+    background-image: url("../img/project_banner.jpg");
+
+}
+
+.project-banner .section {
+    position: relative;
+}
+
+.project-banner .section-1 {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.project-banner .section-1 h1 {
+    color: rgb(255, 255, 255);
+}
+
+/*abouti skizb*/
+.about-us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-us .sections {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-us .sections .section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.about-us .sections .section-1 img {
+    width: 35px;
+    height: 30px;
+}
+
+.about-us .sections .section-1 h3 {
+    margin-left: 10px;
+}
+
+.about-us .sections .section-2 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-us .sections .section-2 p {
+    text-align: left;
+    font-weight: 400;
+}
+
+.about-us .sections .section-3 {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    padding-top: 10px;
+}
+
+.about-us .sections .section-3 a {
+    text-decoration: none;
+    color: rgb(50, 150, 50);
+}
+
+.about-us .sections .section-3 a:hover {
+    opacity: 0.8;
+}
+
+/*abouti verj*/
+/*gallery skizb*/
+.projects-gallery {
+    margin-top: 100px;
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects-gallery .section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    line-height: 2;
+    position: relative;
+}
+.projects-gallery .gallery-slider {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-bottom: 100px;
+}
+/*gallery verj*/
+/*--------------projects eji styleri verj*/
+
+/*-----------news eji styleri skizb-------------*/
+.news-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-section .section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.news-section .section-1 .news-card-section-1 {
+    width: 100%;
+    line-height: 1.5;
+}
+
+.news-section .section-1 .news-card-section-2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.news-section .section-1 .news-card-section-2 img {
+    width: 100%;
+}
+
+.news-section .section-1 .news-card-section-3 {
+    line-height: 1.5;
+}
+
+.news-section .section-1 .news-card-section-4 {
+    padding-top: 20px;
+}
+
+.news-section .section-1 .news-card-section-4 img {
+    height: 40px;
+}
+
+.pagination {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.pagination .section-1 {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pagination .section-1 img {
+    height: 30px;
+}
+
+.pagination .section-1 a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.pagination .section-1 a:hover {
+    color: rgb(117, 193, 79);
+}
+
+
+.container {
+    width: auto;
+    padding: 0 15px;
+}
+
+
+/*@media (min-width: 768px) {*/
+/*    .container {*/
+/*        padding: 0 25px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1024px) {*/
+/*    .container {*/
+/*        margin: auto;*/
+/*        width: 976px;*/
+/*        padding: 0 24px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1440px) {*/
+/*    .container {*/
+/*        width: 1300px;*/
+/*        padding: 0 70px;*/
+/*    }*/
+/*}*/
+
+/*-----------news eji styleri verj-------------*/
+
+/*-------------responsive skizb------------*/
+@media screen and (max-width: 1024px) {
+/*---------------home-resp-start------------------*/
+    /*missions-description-start*/
+    .mission-description .sections {
+        width: 40%;
+    }
+
+    /*missions-description-end*/
+    /*services-start*/
+    .home-services .services-card {
+        width: 45%;
+    }
+
+    .home-services .services-card .card {
+        width: 325px;
+        height: 250px;
+    }
+
+    .home-services .services-card img {
+        width: 85px;
+        height: 85px;
+    }
+
+    /*services-end*/
+    /* news-start*/
+    .news-press .news-section-2 .section-1 {
+        width: 70%;
+    }
+
+    .news-press .news-section-2 .section-1 .news-card {
+        width: 80%;
+    }
+
+    .news-press .news-section-2 .section-1 .news-card .content {
+        width: 65%;
+    }
+
+    .news-press .news-section-3 .press {
+        width: 90%;
+    }
+
+    /*--------news-end*----------*/
+    /*-----------contact-start-----------*/
+    .contact .info-section {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .contact .input-section {
+        display: flex;
+        width: 90%;
+    }
+    /*   contact-end */
+/*---------------home-resp-end------------------*/
+
+/*---------------project-resp-start-----------------*/
+    /*  about-us start  */
+    .about-us .sections {
+        width: 45%;
+    }
+
+    /*  about-us end  */
+/*---------------project-resp-end-----------------*/
+
+/*---------------news-resp-start-------------*/
+    .news-section{
+        padding-bottom: 200px;
+    }
+    .news-section .section-1 {
+        width: 60%;
+    }
+    .news-section .section-1 .news-card-section-4 img {
+        height: 50px;
+    }
+    .pagination {
+        padding-bottom: 100px;
+    }
+
+    .pagination .section-1 {
+        display: flex;
+        width: 30%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+/*---------------news-resp-end-------------*/
+}
+
+@media screen and (max-width: 768px) {
+/*---------------home-resp-start------------------*/
+    /*missions-description-start*/
+    .mission-description .sections {
+        width: 45%;
+    }
+
+    /*missions-description-end*/
+    /*services-start*/
+    .home-services .services-card {
+        margin: 10px 10px;
+        width: 65%;
+    }
+
+    .home-services .services-card .card {
+        width: 350px;
+        height: 250px;
+    }
+
+    .home-services .services-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .home-services .services-card h4 {
+        margin-top: 15px;
+    }
+
+    /*services-end*/
+    /* news-start*/
+    .news-press .news-section-2 .section-1 .news-card {
+        width: 80%;
+    }
+
+    .news-press .news-section-2 .section-1 .news-card .content {
+        width: 70%;
+    }
+
+    .news-press .news-section-3 .press {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .news-press .news-section-3 .press .press-card {
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    /* news-end*/
+    /* contact-start*/
+    .contact .input-section {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .contact .input-section .input {
+        display: block;
+        width: 75%;
+    }
+
+    .contact .input-section textarea {
+        display: block;
+        width: 75%;
+    }
+
+    .contact .contact-btn {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    /* contact-end*/
+/*---------------home-resp-end------------------*/
+
+/*---------------project-resp-start-----------------*/
+    /*  about-us start  */
+    .about-us .sections {
+        width: 50%;
+    }
+    /*  about-us end  */
+/*---------------project-resp-end-----------------*/
+
+/*---------------news-resp-start-------------*/
+    .news-section{
+        padding-bottom: 125px;
+    }
+    .news-section .section-1 {
+        width: 70%;
+    }
+
+    .pagination .section-1 {
+        width: 35%;
+    }
+
+    .pagination .section-1 img {
+        height: 26px;
+    }
+/*---------------news-resp-end-------------*/
+}
+
+@media screen and (max-width: 572px){
+
+}
+
+@media screen and (max-width: 380px) {
+/*---------------home-resp-start------------------*/
+    /*missions-description-start*/
+    .mission-description .sections {
+        width: 60%;
+    }
+
+    /*missions-description-end*/
+    /*services-start*/
+    .home-services .services-card {
+        margin: 10px 10px;
+        width: 70%;
+    }
+
+    .home-services .services-card .card {
+        width: 250px;
+        height: 150px;
+    }
+
+    .home-services .services-card img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .home-services .services-card h4 {
+        margin-top: 15px;
+    }
+
+    /*services-end*/
+    /* news-start*/
+    .news-press .news-section-2 .section-1 {
+        width: 90%;
+    }
+
+    .news-press .news-section-2 .section-1 .news-card {
+        width: 100%;
+    }
+
+    .news-press .news-section-2 .section-1 .news-card .date {
+        width: 20%;
+    }
+
+    .news-press .news-section-2 .section-1 .news-card .content {
+        margin-left: 10px;
+        width: 75%;
+    }
+
+    .news-press .news-section-2 .section-2 {
+        width: 7%;
+    }
+
+    .news-press .news-section-3 .press {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .news-press .news-section-3 .press .press-card {
+        margin-top: 20px;
+        width: 95%;
+    }
+
+    /* news-end*/
+    /* contact-start*/
+    .contact .input-section {
+        width: 100%;
+    }
+
+    .contact .input-section .input {
+        width: 85%;
+    }
+
+    .contact .input-section textarea {
+        width: 85%;
+        height: 125px;
+    }
+
+    .contact .contact-btn {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    /* contact-end*/
+/*---------------home-resp-end------------------*/
+
+/*---------------project-resp-start-----------------*/
+    /*  about-us start  */
+    .about-us .sections {
+        width: 70%;
+    }
+    /*  about-us end  */
+/*---------------project-resp-end-----------------*/
+
+/*---------------news-resp-start-------------*/
+    .news-section {
+        padding-bottom: 125px;
+    }
+
+    .news-section .section-1 {
+        width: 90%;
+    }
+    .news-section .section-1 .news-card-section-2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    .pagination .section-1 {
+        width: 60%;
+    }
+
+    .pagination .section-1 img {
+        height: 26px;
+    }
+/*---------------news-resp-end-------------*/
+}
+
+/*-------------responsive verj------------*/
