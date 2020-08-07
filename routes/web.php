@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//front
 Route::get('/', function () {
     return redirect()->route('home.index');
 });
@@ -23,6 +24,8 @@ Auth::routes();
 //
 Route::group(['name' => 'front'],function (){
     require_once (__DIR__.'\front\home.php');
+    require_once (__DIR__.'\front\projects.php');
+    require_once (__DIR__.'\front\news.php');
 });
 
 //admin
@@ -31,4 +34,5 @@ Route::group(['name' => 'admin_login'],function (){
 });
 
 Route::group(['name' => 'admin','prefix' => 'admin'],function (){
+    require_once (__DIR__ . '\admin\main.php');
 });

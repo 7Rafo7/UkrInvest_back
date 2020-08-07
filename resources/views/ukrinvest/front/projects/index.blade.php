@@ -1,8 +1,6 @@
 @extends('layouts.front.app')
 
 @section('content')
-    <!--  header-start  -->
-
     <div class="header">
         <div class="section section-1">
             <img src="{{ asset('images/front/equipment.png') }}" alt="">
@@ -11,12 +9,12 @@
 
         <div class="section section-2 no-mobile no-tablet">
             <ul>
-                <li><a class="animated-link" href="#home">Home</a></li>
-                <li><a class="animated-link" href="#mission">Missions</a></li>
+                <li><a class="animated-link" href="{{ route('home.index') }}">Home</a></li>
+                <li><a class="animated-link" href="">Missions</a></li>
                 <li><a class="animated-link" href="{{ route('projects.index') }}">Projects</a></li>
-                <li><a class="animated-link" href="#services">Services</a></li>
+                <li><a class="animated-link" href="">Services</a></li>
                 <li><a class="animated-link" href="{{ route('news.index') }}">News</a></li>
-                <li><a class="animated-link" href="#contact">Contacts</a></li>
+                <li><a class="animated-link" href="">Contacts</a></li>
             </ul>
         </div>
 
@@ -45,12 +43,12 @@
                 </div>
                 <div class="mobile-section-2">
                     <ul>
-                        <li><a class="animated-link" href="#home">Home</a></li>
-                        <li><a class="animated-link" href="#mission">Missions</a></li>
-                        <li><a class="animated-link" href="">Projects</a></li>
-                        <li><a class="animated-link" href="#services">Services</a></li>
-                        <li><a class="animated-link" href="">News</a></li>
-                        <li><a class="animated-link" href="#contact">Contacts</a></li>
+                        <li><a class="animated-link" href="{{ route('home.index') }}">Home</a></li>
+                        <li><a class="animated-link" href="">Missions</a></li>
+                        <li><a class="animated-link" href="{{ route('projects.index') }}">Projects</a></li>
+                        <li><a class="animated-link" href="">Services</a></li>
+                        <li><a class="animated-link" href="{{ route('news.index') }}">News</a></li>
+                        <li><a class="animated-link" href="">Contacts</a></li>
                     </ul>
                 </div>
 
@@ -59,32 +57,18 @@
 
     </div>
 
-    <!--        HEADER END    -->
+    <!--    headeri verj-->
 
-    <!--        headeri taki nkari skizb-->
-    <div class="home-banner" id="home">
-        <div class="section section-1">
-            <a href="#"><i class="fa fa-facebook-f"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-youtube-play"></i></a>
-        </div>
-        <div class="section section-2">
-            <h1>SMART CITY & TRAFFIC CONTROL</h1>
-        </div>
-        <div class="section section-3">
-            <div class="slider">
-                <a class="animated-link" href="#mission"><img class="slider-arrow" src="{{ asset('images/front/slider-arrow.png') }}" alt=""></a>
-                <!--            <div class="ketik-section">-->
-                <!--                <div class="ketik-white"></div>-->
-                <!--                <div class="ketik"></div>-->
-                <!--                <div class="ketik"></div>-->
-                <!--            </div>-->
-            </div>
+    <!--    banneri skizb-->
+    <div class="project-banner">
+        <div class="section-1">
+            <h1>TRAFFIC LIGHT CONTROL SYSTEM</h1>
         </div>
     </div>
-    <!--        headeri taki nkari verj-->
-    <!--        Missioni descriptioni skizb-->
-    <div class="mission-description" id="mission">
+    <!--    banneri verj-->
+
+    <!--    abouti skizb-->
+    <div class="about-us">
         <div class="sections">
             <div class="section section-1">
                 <img src="{{ asset('images/front/sigh.png') }}" alt="">
@@ -109,45 +93,12 @@
             </div>
         </div>
     </div>
-    <!--        Missioni descriptioni verj-->
-    <!--        services masi szkizb-->
-    <div class="home-services" id="services">
-        <div class="section section-1">
-            <h2>SERVICES</h2>
-        </div>
-        <div class="section section-2">
-            <div class="services-card">
-                <div class="card card-1">
-                    <img src="{{ asset('images/front/light.png') }}" alt="">
-                </div>
-                <h4>TRAFFIC LIGHTS</h4>
-            </div>
-            <div class="services-card">
-                <div class="card card-2">
-                    <img src="{{ asset('images/front/sigh.png') }}" alt="">
-                </div>
-                <h4>ROAD SIGNS</h4>
-            </div>
-            <div class="services-card">
-                <div class="card card-3">
-                    <img src="{{ asset('images/front/marks.png') }}" alt="">
-                </div>
-                <h4>ROAD MARKS</h4>
-            </div>
-            <div class="services-card">
-                <div class="card card-4">
-                    <img src="{{ asset('images/front/equipment.png') }}" alt="">
-                </div>
-                <h4>EQUIPMENT</h4>
-            </div>
-        </div>
-    </div>
-    <!--        services masi verj-->
+    <!--    abouti verj-->
 
-    <!--        home-gallery-i skizb-->
-    <div class="home-projects-gallery">
+    <!--    gallery-i skizb-->
+    <div class="projects-gallery">
         <div class="section-1">
-            <h2>Featured Projects</h2>
+            <h2>Gallery</h2>
             <p>Lorem ipsum dolor sit amet, consectetur.</p>
         </div>
         <div class="gallery-slider">
@@ -157,9 +108,11 @@
                     <!-- Slides -->
                     <div class="swiper-slide">
                         <div class="card-item">
+
                             <div class="card__img">
                                 <img src="{{ asset('images/front/gallery-traffic-1.jpg') }}" alt="card-img">
                             </div>
+
                             <div class="card__info closed" data-card="1">
                                 <div class="card__info-body">
                                     <h4>TEST STR.</h4>
@@ -181,9 +134,11 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card-item">
+
                             <div class="card__img">
                                 <img src="{{ asset('images/front/gallery-traffic-2.jpg') }}" alt="card-img">
                             </div>
+
                             <div class="card__info closed" data-card="3">
                                 <div class="card__info-body">
                                     <h4>TEST STR.</h4>
@@ -205,9 +160,11 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card-item">
+
                             <div class="card__img">
                                 <img src="{{ asset('images/front/gallery-traffic-2.jpg') }}" alt="card-img">
                             </div>
+
                             <div class="card__info closed" data-card="2">
                                 <div class="card__info-body">
                                     <h4>TEST STR.</h4>
@@ -229,6 +186,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card-item">
+
                             <div class="card__img">
                                 <img src="{{ asset('images/front/gallery-traffic-3.jpg') }}" alt="card-img">
                             </div>
@@ -254,9 +212,11 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card-item">
+
                             <div class="card__img">
                                 <img src="{{ asset('images/front/gallery-traffic-4.jpg') }}" alt="card-img">
                             </div>
+
                             <div class="card__info closed" data-card="5">
                                 <div class="card__info-body">
                                     <h4>TEST STR.</h4>
@@ -278,9 +238,11 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card-item">
+
                             <div class="card__img">
                                 <img src="{{ asset('images/front/gallery-traffic-2.jpg') }}" alt="card-img">
                             </div>
+
                             <div class="card__info closed" data-card="6">
                                 <div class="card__info-body">
                                     <h4>TEST STR.</h4>
@@ -315,134 +277,9 @@
             </div>
 
         </div>
+
     </div>
-    <!--        home-gallery-i verj-->
-    <!--        home-news-i skizb-->
-    <div class="news-press">
-        <div class="news-section-1">
-            <h2>News & Press</h2>
-        </div>
-        <div class="news-section-2">
-            <div class="section-1">
-                <div class="news-card">
-                    <div class="date">
-                        <h3>28 MAY, 2019</h3>
-                    </div>
-                    <div class="content">
-                        <h3>Lorem ipsum.</h3>
-                        <p>Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit.
-                        </p>
-                    </div>
-                    <div class="icon">
-                        <i class="fa fa-share-alt"></i>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <div class="date">
-                        <h3>28 MAY, 2019</h3>
-                    </div>
-                    <div class="content">
-                        <h3>Lorem ipsum.</h3>
-                        <p>Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit.
-                        </p>
-                    </div>
-                    <div class="icon">
-                        <i class="fa fa-share-alt"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="section-2">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook-f"></i></a>
-                <a href=""><i class="fa fa-envelope"></i></a>
-            </div>
-        </div>
-        <div class="news-section-3">
-            <div class="press">
-                <div class="press-card">
-                    <div class="card-img">
-                        <img src="{{ asset('images/front/road-2.jpg') }}" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h5>28 May, 2019</h5>
-                        <h2>Lorem ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit.
-                            Molestias, quibusdam.</p>
-                    </div>
-                    <div class="card-btn">
-                        <img src="{{ asset('images/front/more.png') }}" alt="">
-                    </div>
-                </div>
-                <div class="press-card">
-                    <div class="card-img">
-                        <img src="{{ asset('images/front/road-1.jpg') }}" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h5>28 May, 2019</h5>
-                        <h2>Lorem ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit.
-                            Molestias, quibusdam.</p>
-                    </div>
-                    <div class="card-btn">
-                        <img src="{{ asset('images/front/more.png') }}" alt="">
-                    </div>
-                </div>
-                <div class="press-card">
-                    <div class="card-img">
-                        <img src="{{ asset('images/front/road-2.jpg') }}" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h5>28 May, 2019</h5>
-                        <h2>Lorem ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit.
-                            Molestias, quibusdam.</p>
-                    </div>
-                    <div class="card-btn">
-                        <img src="{{ asset('images/front/more.png') }}" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--        home-news-i verj-->
-
-
-    <!--        contacti skizb-->
-    <div class="contact" id="contact">
-        <div class="info-section">
-            <h3>Contacts</h3>
-            <ul>
-                <li>+374 10 128471</li>
-                <li>info@ukrinvest.com</li>
-                <li>111 Address</li>
-                <li>Yerevan 0000,</li>
-                <li>Armenia</li>
-            </ul>
-        </div>
-        <div class="input-section">
-            <label for="name"></label>
-            <input class="input" type="text" placeholder="Name*" id="name">
-            <label for="email"></label>
-            <input class="input" type="text" placeholder="Email*" id="email">
-            <label for="subject"></label>
-            <input class="input" type="text" placeholder="Subject*" id="subject">
-            <label for="text"></label>
-            <textarea name="Text" id="text" rows="50"></textarea>
-
-        </div>
-        <div class="text-input-section">
-
-        </div>
-        <div class="contact-btn">
-            <a class="btn send-btn" href="">Send</a>
-        </div>
-    </div>
-    <!--        contacti verj-->
+    <!--    gallery-i verj-->
 
     <!--        modali skizb-->
     <div class="modal">
@@ -487,4 +324,5 @@
         </div>
     </div>
     <!--        footeri verj-->
+
 @endsection

@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 abstract class FrontBaseController extends Controller
 {
-    //
+    public function __construct()
+    {
+        $this->middleware('guest');
+    }
 }

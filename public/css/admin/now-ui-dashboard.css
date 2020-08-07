@@ -4070,6 +4070,20 @@ Created using IcoMoon - icomoon.io
   z-index: 3;
 }
 
+.sidebar[data-color="ukr"]:after,
+.off-canvas-sidebar[data-color="ukr"]:after {
+  background: rgb(117, 193, 79);
+}
+
+.sidebar[data-color="blue"] .nav li.active>a:not([data-toggle="collapse"]),
+.off-canvas-sidebar[data-color="blue"] .nav li.active>a:not([data-toggle="collapse"]) {
+  color: rgb(117, 193, 79);
+}
+
+.sidebar[data-color="blue"] .nav li.active>a:not([data-toggle="collapse"]) i,
+.off-canvas-sidebar[data-color="blue"] .nav li.active>a:not([data-toggle="collapse"]) i {
+  color: rgb(117, 193, 79);
+}
 .sidebar[data-color="blue"]:after,
 .off-canvas-sidebar[data-color="blue"]:after {
   background: #2CA8FF;
@@ -5988,4 +6002,4 @@ Created using IcoMoon - icomoon.io
   }
 }
 
-/*# sourceMappingURL=dashboard-free.css.map */
+/*# sourceMappingURL=main-free.css.map */
