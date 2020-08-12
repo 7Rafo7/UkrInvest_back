@@ -118,24 +118,28 @@
         <div class="section section-2">
             <div class="services-card">
                 <div class="card card-1">
+                    <img src="{{ asset('images/front/light.jpg') }}" alt="">
                     <img src="{{ asset('images/front/light.png') }}" alt="">
                 </div>
                 <h4>TRAFFIC LIGHTS</h4>
             </div>
             <div class="services-card">
                 <div class="card card-2">
+                    <img src="{{ asset('images/front/sign.jpg') }}" alt="">
                     <img src="{{ asset('images/front/sigh.png') }}" alt="">
                 </div>
                 <h4>ROAD SIGNS</h4>
             </div>
             <div class="services-card">
                 <div class="card card-3">
+                    <img src="{{ asset('images/front/marks.jpg') }}" alt="">
                     <img src="{{ asset('images/front/marks.png') }}" alt="">
                 </div>
                 <h4>ROAD MARKS</h4>
             </div>
             <div class="services-card">
                 <div class="card card-4">
+                    <img src="{{ asset('images/front/equipment.jpg') }}" alt="">
                     <img src="{{ asset('images/front/equipment.png') }}" alt="">
                 </div>
                 <h4>EQUIPMENT</h4>
@@ -154,31 +158,29 @@
             <div class="swiper-container">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
+                    <!-- Slides -->.
+                    @foreach($galleryItems as $galleryItem)
+                        @php/**@var \App\Models\Slider $galleryItem */ @endphp
                     <div class="swiper-slide">
                         <div class="card-item">
                             <div class="card__img">
-                                <img src="{{ asset('images/front/gallery-traffic-1.jpg') }}" alt="card-img">
+                                <img src="{{ $galleryItem['img'] }}" alt="card-img">
                             </div>
-                            <div class="card__info closed" data-card="1">
+                            <div class="card__info closed" data-card="{{ $galleryItem['id'] }}">
                                 <div class="card__info-body">
-                                    <h4>TEST STR.</h4>
-                                    <p>Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit.
-                                        Rem, similique.
-                                    </p>
-
-                                    <div class="card__info-more" data-more="1">
+                                    <h4>{{ $galleryItem['title'] }}</h4>
+                                    <p>{{ $galleryItem['description'] }}</p>
+                                    <div class="card__info-more" data-more="{{ $galleryItem['id'] }}">
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
+                    @endforeach
+{{--
                     <div class="swiper-slide">
                         <div class="card-item">
                             <div class="card__img">
@@ -300,7 +302,7 @@
 
                         </div>
                     </div>
-
+--}}
 
                 </div>
                 <!-- If we need pagination -->

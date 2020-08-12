@@ -7,8 +7,8 @@
     <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
             <li class="@if ($activePage ?? '' == 'home') active @endif">
-                <a href="">
-                    <i class="now-ui-icons design_app"></i>
+                <a href="{{ route('admin.main.index') }}">
+                    <i class="fa fa-list"></i>
                     <p>Main</p>
                 </a>
             </li>
@@ -28,34 +28,34 @@
 {{--                                <p> Users list </p>--}}
 {{--                            </a>--}}
 {{--                        </li>--}}
-{{--                        --}}{{--                        <li class="@if ($activePage ?? '' == 'deleted') active @endif">--}}
-{{--                        --}}{{--                            <a href="{{ route('admin.blog.deleted.index') }}">--}}
-{{--                        --}}{{--                                <i class="now-ui-icons design_bullet-list-67"></i>--}}
-{{--                        --}}{{--                                <p> Users list </p>--}}
-{{--                        --}}{{--                            </a>--}}
-{{--                        --}}{{--                        </li>--}}
+{{--                                                <li class="@if ($activePage ?? '' == 'deleted') active @endif">--}}
+{{--                                                    <a href="">--}}
+{{--                                                        <i class="now-ui-icons design_bullet-list-67"></i>--}}
+{{--                                                        <p> Users list </p>--}}
+{{--                                                    </a>--}}
+{{--                                                </li>--}}
 
-{{--                        --}}{{--                        <li class="@if ($activePage ?? '' == 'profile') active @endif">--}}
-{{--                        --}}{{--                            <a href="#">--}}
-{{--                        --}}{{--                                <i class="now-ui-icons users_single-02"></i>--}}
-{{--                        --}}{{--                                <p> Admin profile </p>--}}
-{{--                        --}}{{--                            </a>--}}
-{{--                        --}}{{--                        </li>--}}
+{{--                                                <li class="@if ($activePage ?? '' == 'profile') active @endif">--}}
+{{--                                                    <a href="#">--}}
+{{--                                                        <i class="now-ui-icons users_single-02"></i>--}}
+{{--                                                        <p> Admin profile </p>--}}
+{{--                                                    </a>--}}
+{{--                                                </li>--}}
 {{--                    </ul>--}}
 {{--                </div>--}}
 {{--            </li>--}}
-{{--            <li class="@if ($activePage ?? '' == 'categories') active @endif">--}}
-{{--                <a href="">--}}
-{{--                    <i class="fa fa-list"></i>--}}
-{{--                    <p> Categories </p>--}}
-{{--                </a>--}}
-{{--            </li>--}}
-{{--            <li class="@if ($activePage ?? '' == 'posts') active @endif">--}}
-{{--                <a href="">--}}
-{{--                    <i class="fa fa-list"></i>--}}
-{{--                    <p> Posts </p>--}}
-{{--                </a>--}}
-{{--            </li>--}}
+            <li class="@if ($activePage ?? '' == 'gallery') active @endif">
+                <a href="{{ route('admin.gallery.index') }}">
+                    <i class="fa fa-list"></i>
+                    <p> Gallery </p>
+                </a>
+            </li>
+            <li class="@if ($activePage ?? '' == 'links') active @endif">
+                <a href="">
+                    <i class="fa fa-list"></i>
+                    <p> Links </p>
+                </a>
+            </li>
 {{--            <li class="@if ($activePage ?? '' == 'Map') active @endif">--}}
 {{--                <a href="">--}}
 {{--                    <i class="fa fa-map"></i>--}}

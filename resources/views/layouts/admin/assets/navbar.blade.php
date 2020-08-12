@@ -31,7 +31,10 @@
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="now-ui-icons users_single-02"></i>
+{{--                        <i class="now-ui-icons users_single-02"></i>--}}
+                        <p>
+                            <span>{{ __("Admin") }}</span>
+                        </p>
                         <p>
                             <span class="d-lg-none d-md-block">{{ __("Account") }}</span>
                         </p>

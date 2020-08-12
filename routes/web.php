@@ -34,5 +34,6 @@ Route::group(['name' => 'admin_login'],function (){
 });
 
 Route::group(['name' => 'admin','prefix' => 'admin'],function (){
-    require_once (__DIR__ . '\admin\main.php');
+    require_once (__DIR__ .'\admin\main.php');
+    require_once (__DIR__.'\admin\gallery.php');
 });

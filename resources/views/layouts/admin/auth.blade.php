@@ -7,3 +7,4 @@
     @yield('content')
     @include('layouts.admin.assets.footer')
 </div>
+

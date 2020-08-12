@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Front;
 
+use App\Models\Slider;
 use Illuminate\Http\Request;
 
 class HomeController extends FrontBaseController
@@ -13,7 +14,8 @@ class HomeController extends FrontBaseController
      */
     public function index()
     {
-        return view('ukrinvest.front.home.index');
+        $galleryItems = Slider::all();
+        return view('ukrinvest.front.home.index',compact('galleryItems'));
     }
 
 
