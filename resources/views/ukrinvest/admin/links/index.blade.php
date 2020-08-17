@@ -1,9 +1,8 @@
 @extends('layouts.admin.app')
 
 @section('title')
-    <title>Gallery</title>
+    <title>Links</title>
 @endsection
-
 @section('content')
     <div class="panel-header"></div>
     <div class="content">
@@ -12,26 +11,20 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="text-center">
-                            <h2>Gallery Items</h2>
+                            <h2>Links</h2>
                         </div>
-                        <form action="{{ route('admin.gallery.store') }}" method="POST"
-                              enctype="multipart/form-data">
+                        <form action="{{ route('admin.links.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
-{{--                            {{ csrf_field() }}--}}
                             <div class="form-group">
                                 <label for="title" class="form-check-label">Title</label>
                                 <input type="text" name="title" id="title" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="desc" class="form-check-label">Description</label>
-                                <input type="text" name="description" id="desc" class="form-control">
+                                <label for="link" class="form-check-label">Link</label>
+                                <input type="text" name="link" id="link" class="form-control">
                             </div>
-{{--                            <div class="form-group">--}}
-                                <label for="img" class="form-check-label">Select Image</label>
-                                <input type="file" id="img" name="img" class="form-control-file">
-{{--                            </div>--}}
                             <div class="text-center">
-                                <button class="btn btn-primary btn-round mt-5">{{ __('Save') }}</button>
+                                <button class="btn btn-primary btn-round">{{ (__('Save')) }}</button>
                             </div>
                         </form>
                     </div>
@@ -42,27 +35,23 @@
                                 <tr>
                                     <td class="text-center">#</td>
                                     <td class="text-center">Title</td>
-                                    <td class="text-center">Description</td>
-                                    <td class="text-center">Image</td>
+                                    <td class="text-center">Link</td>
                                     <td class="text-center">Edit</td>
                                     <td class="text-center">Delete</td>
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach($galleryItems as $galleryItem)
-                                @php /**@var \App\Models\Slider $galleryItem */ @endphp
+                            @foreach($links as $link)
+                                @php/**@var \App\Models\Link $link*/ @endphp
                                 <tr>
-                                    <td class="text-center">{{ $galleryItem['id'] }}</td>
-                                    <td class="text-center">{{ $galleryItem['title'] }}</td>
-                                    <td class="text-center">{{ $galleryItem['description'] }}</td>
+                                    <td class="text-center">{{ $link['id'] }}</td>
+                                    <td class="text-center">{{ $link['title'] }}</td>
+                                    <td class="text-center">{{ $link['link'] }}</td>
                                     <td class="text-center">
-                                        <img src="{{ $galleryItem['img'] }}" style="width: 80px; height: 50px" alt="">
+                                        <a class="btn btn-primary text-white" href="{{ route('admin.links.edit',$link['id']) }}">Edit</a>
                                     </td>
                                     <td class="text-center">
-                                        <a class="btn btn-primary text-white" href="{{ route('admin.gallery.edit',$galleryItem['id']) }}">Edit</a>
-                                    </td>
-                                    <td class="text-center">
-                                        <form action="{{ route('admin.gallery.destroy',$galleryItem['id']) }}" method="POST">
+                                        <form action="{{ route('admin.links.destroy',$link['id']) }}" method="POST">
                                             @csrf
                                             @method('DELETE')
                                             <button class="btn btn-danger text-white">Delete</button>

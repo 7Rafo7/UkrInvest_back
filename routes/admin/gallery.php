@@ -1,4 +1,4 @@
 <?php
 
-Route::resource('gallery','Admin\GalleryController')->only(['index','store','update','edit'])->names('admin.gallery');
+Route::resource('gallery','Admin\GalleryController')->only(['index','store','update','edit','destroy'])->names('admin.gallery');
 

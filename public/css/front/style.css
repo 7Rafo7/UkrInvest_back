@@ -162,10 +162,14 @@ ul li {
 .mission-description .sections .section-3 a {
     text-decoration: none;
     color: rgb(50, 150, 50);
+    cursor: pointer;
 }
 
 .mission-description .sections .section-3 a:hover {
     opacity: 0.8;
+}
+#more{
+    display: none;
 }
 
 /*missioni descriptioni verj */
@@ -718,6 +722,374 @@ ul li {
 /*-----------news eji styleri verj-------------*/
 
 /*-------------responsive skizb------------*/
+@media screen and (min-width: 2560px) {
+    /*  home-page-start*/
+    /*banner-start*/
+    .home-banner {
+        height: 1200px;
+    }
+    .home-banner .section-1 {
+        margin-left: 30px;
+    }
+    .home-banner .section-1 a{
+        margin-top: 50px;
+    }
+
+    .home-banner .section-1 a i {
+        font-size: 45px;
+    }
+
+    .home-banner .section-1 a i:hover {
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .home-banner .section-2 h1 {
+        font-size: 60px;
+    }
+    /*    banner-end*/
+    /*    news-section-start*/
+    .mission-description .sections {
+        width: 40%;
+    }
+
+    .mission-description .sections .section-1 img {
+        margin-left: 10px;
+        width: 5%;
+        height: 5%;
+    }
+
+    .mission-description .sections .section-1 h3 {
+        margin-left: 10px;
+        font-size: 35px;
+    }
+
+    .mission-description .sections .section-2 {
+        padding-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .mission-description .sections .section-2 p {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .mission-description .sections .section-3 {
+        padding-top: 15px;
+    }
+
+    .mission-description .sections .section-3 a {
+        font-size: 25px;
+    }
+    .mission-description .sections .section-3 a i {
+        font-size: 30px;
+    }
+    /*    news-section-end*/
+    /*    home-services-start*/
+    .home-services {
+        margin-top: 150px;
+        padding: 50px;
+    }
+
+    .home-services .section-1 {
+        padding-bottom: 80px;
+    }
+    .home-services .section-1 h2 {
+        font-size: 50px;
+    }
+    .home-services .services-card {
+        margin: 20px 20px;
+        width: 40%;
+
+    }
+    .home-services .services-card .card {
+        width: 900px;
+        height: 450px;
+    }
+    .home-services .services-card img:last-child {
+        width: 200px;
+        height: 200px;
+    }
+    .home-services .services-card h4 {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 26px;
+    }
+    /*    home-services-end*/
+    /*    news-press-start*/
+    .news-press .news-section-1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .news-press .news-section-1 h2{
+        font-size: 50px;
+    }
+    .news-press .news-section-2 {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .news-press .news-section-2 .section-1 {
+        width: 80%;
+    }
+
+    .news-press .news-section-2 .section-1 .news-card {
+        width: 48%;
+        height: 150px;
+    }
+
+    .news-press .news-section-2 .section-1 .news-card .date {
+        width: 15%;
+        height: 150px;
+    }
+    .news-press .news-section-2 .section-1 .news-card .date h3 {
+        font-size: 36px;
+    }
+
+    .news-press .news-section-2 .section-1 .news-card .content {
+        width: 75%;
+    }
+
+    .news-press .news-section-2 .section-1 .news-card .content h3 {
+        font-size: 36px;
+    }
+    .news-press .news-section-2 .section-1 .news-card .content p {
+        font-size: 26px;
+    }
+
+    .news-press .news-section-2 .section-1 .news-card .icon {
+        height: 50px;
+        width: 50px;
+        margin-right: -15px;
+        border-radius: 50px;
+    }
+
+    .news-press .news-section-2 .section-1 .news-card .icon i {
+        font-size: 30px;
+    }
+
+    .news-press .news-section-2 .section-2 {
+        width: 3%;
+        height: 150px;
+        margin-right: 10px;
+    }
+
+    .news-press .news-section-2 .section-2 a {
+        text-decoration: none;
+        font-size: 36px;
+        color: rgb(0, 28, 29);
+        margin-top: 5px;
+    }
+
+    .news-press .news-section-3 .press {
+        width: 85%;
+    }
+
+    .news-press .news-section-3 .press .press-card {
+        display: flex;
+        width: 30%;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .news-press .news-section-3 .press .press-card .card-img {
+        width: 650px;
+        height: 500px;
+        /*object-fit: cover;*/
+    }
+    .news-press .news-section-3 .press .press-card .card-img img {
+        height: 100%;
+        width: 100%;
+        /*object-fit: cover;*/
+    }
+
+    .news-press .news-section-3 .press .press-card .card-content {
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+        line-height: 1.7;
+    }
+    .news-press .news-section-3 .press .press-card .card-content h5 {
+        font-size: 24px;
+    }
+
+    .news-press .news-section-3 .press .press-card .card-content h2 {
+        margin-top: 15px;
+        font-size: 36px;
+    }
+    .news-press .news-section-3 .press .press-card .card-content p {
+        font-size: 24px;
+    }
+
+    .news-press .news-section-3 .press .press-card .card-btn img {
+        margin-bottom: -35px;
+        height: 70px;
+    }
+    /*    news-press-end*/
+    /*    contact-start*/
+    .contact .info-section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+
+    .contact .info-section h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+    .contact .info-section ul li {
+        font-size: 30px;
+    }
+
+    .contact .input-section {
+        width: 95%;
+    }
+
+    .contact .input-section .input {
+        width: 30%;
+        height: calc(40px + 20px + 6px);
+        font-size: 25px;
+    }
+
+    .contact .input-section textarea {
+        width: 90.5%;
+        height: 300px;
+        font-size: 25px;
+    }
+
+    .contact .contact-btn {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .contact .contact-btn a {
+        text-decoration: none;
+    }
+
+    .contact .contact-btn .btn {
+        font-size: 28px;
+        border-radius: 60px;
+    }
+
+    .contact .contact-btn .send-btn {
+        padding: 20px 50px 20px 50px;
+    }
+    /*    contact-end*/
+    /*   home-page-end*/
+
+
+    /*   projects-page-start*/
+    /*    about-us-start*/
+    .about-us {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .about-us .sections {
+        width: 40%;
+    }
+
+    .about-us .sections .section-1 {
+        width: 100%;
+    }
+
+    .about-us .sections .section-1 img {
+        width: 50px;
+        height: 45px;
+    }
+
+    .about-us .sections .section-1 h3 {
+        font-size: 36px;
+    }
+
+    .about-us .sections .section-2 {
+        padding-top: 20px;
+    }
+
+    .about-us .sections .section-2 p {
+        font-size: 24px;
+        text-align: justify;
+    }
+
+    .about-us .sections .section-3 {
+
+    }
+
+    .about-us .sections .section-3 a {
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .about-us .sections .section-3 a i {
+        font-size: 24px;
+    }
+    /*      about-us-end*/
+    /*    projects-gallery-start*/
+    .projects-gallery {
+        margin-top: 100px;
+        background-color: rgb(200, 200, 200);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .projects-gallery .section-1 h2 {
+        font-size: 36px;
+    }
+    .projects-gallery .section-1 p {
+        font-size: 24px;
+    }
+    /*    projects-gallery-end*/
+    /*   projects-page-end*/
+
+    /*    news-page-start*/
+    .news-section {
+        padding-top: 300px;
+        padding-bottom: 400px;
+    }
+
+    .news-section .section-1 {
+        width: 45%;
+    }
+    .news-section .section-1 .news-card-section-1 h2{
+        font-size: 36px;
+    }
+
+    .news-section .section-1 .news-card-section-2 {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .news-section .section-1 .news-card-section-3 p {
+        font-size:30px ;
+        text-align: justify;
+    }
+
+    .news-section .section-1 .news-card-section-4 {
+        margin-top: 60px;
+    }
+
+    .news-section .section-1 .news-card-section-4 img {
+        height: 80px;
+    }
+
+    .pagination {
+        margin-bottom: 150px;
+    }
+
+    .pagination .section-1 {
+        width: 30%;
+    }
+
+    .pagination .section-1 img {
+        height: 45px;
+    }
+
+    .pagination .section-1 a {
+        font-size: 34px;
+    }
+    /*    news-page-end*/
+}
+
 @media screen and (max-width: 1024px) {
 /*---------------home-resp-start------------------*/
     /*missions-description-start*/
@@ -1034,8 +1406,4 @@ ul li {
 /*---------------news-resp-end-------------*/
 }
 
-
-@media screen and (max-width: 2560px) {
-
-}
 /*-------------responsive verj------------*/

@@ -58,15 +58,26 @@
         </div>
 
     </div>
-
-    <!--        HEADER END    -->
+    <!--  header-end-->
 
     <!--        headeri taki nkari skizb-->
     <div class="home-banner" id="home">
         <div class="section section-1">
-            <a href="#"><i class="fa fa-facebook-f"></i></a>
+            @if(!empty($allData['facebook']))
+            <a href="{{ $allData['facebook'] }}"><i class="fa fa-facebook-f"></i></a>
+            @else
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+            @endif
+            @if(!empty($allData['instagram']))
+            <a href="{{ $allData['instagram'] }}"><i class="fa fa-instagram"></i></a>
+            @else
             <a href="#"><i class="fa fa-instagram"></i></a>
+            @endif
+            @if(!empty($allData['youtube']))
+            <a href="{{ $allData['youtube'] }}"><i class="fa fa-youtube-play"></i></a>
+            @else
             <a href="#"><i class="fa fa-youtube-play"></i></a>
+            @endif
         </div>
         <div class="section section-2">
             <h1>SMART CITY & TRAFFIC CONTROL</h1>
@@ -102,10 +113,22 @@
                     Delectus eveniet maiores natus porro
                     similique! Dicta doloribus ex illo quidem.
                     Aliquid distinctio dolorem eius repellendus
-                    temporibus.</p>
+                    temporibus <span id="dots">...</span><span id="more">
+                    lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Accusamus aliquid asperiores commodi, consequatur
+                    dignissimos eum, illum ipsa ipsam iure labore molestias
+                    neque quaerat quam repudiandae similique sunt vel vero
+                    voluptate! Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Amet aspernatur beatae blanditiis
+                    cupiditate delectus doloremque dolores eligendi
+                    excepturi explicabo fugit harum impedit, in ipsam
+                    ipsum laboriosam minima modi nam necessitatibus neque
+                    nobis nostrum odio optio pariatur perferendis placeat
+                    quae qui quos repellat repellendus repudiandae sapiente
+                    sit velit vitae. Laboriosam, ut.</span></p>
             </div>
             <div class="section section-3">
-                <a href="">read more <i>&#8594</i></a>
+                <a onclick="readMore()" id="moreBtn">read more <i>&#8594</i></a>
             </div>
         </div>
     </div>
@@ -154,11 +177,12 @@
             <h2>Featured Projects</h2>
             <p>Lorem ipsum dolor sit amet, consectetur.</p>
         </div>
+        @if(!empty($galleryItems))
         <div class="gallery-slider">
             <div class="swiper-container">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->.
+                    <!-- Slides -->
                     @foreach($galleryItems as $galleryItem)
                         @php/**@var \App\Models\Slider $galleryItem */ @endphp
                     <div class="swiper-slide">
@@ -180,143 +204,22 @@
                         </div>
                     </div>
                     @endforeach
-{{--
-                    <div class="swiper-slide">
-                        <div class="card-item">
-                            <div class="card__img">
-                                <img src="{{ asset('images/front/gallery-traffic-2.jpg') }}" alt="card-img">
-                            </div>
-                            <div class="card__info closed" data-card="3">
-                                <div class="card__info-body">
-                                    <h4>TEST STR.</h4>
-                                    <p>Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit.
-                                        Rem, similique.
-                                    </p>
-
-                                    <div class="card__info-more" data-more="3">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card-item">
-                            <div class="card__img">
-                                <img src="{{ asset('images/front/gallery-traffic-2.jpg') }}" alt="card-img">
-                            </div>
-                            <div class="card__info closed" data-card="2">
-                                <div class="card__info-body">
-                                    <h4>TEST STR.</h4>
-                                    <p>Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit.
-                                        Rem, similique.
-                                    </p>
-
-                                    <div class="card__info-more" data-more="2">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card-item">
-                            <div class="card__img">
-                                <img src="{{ asset('images/front/gallery-traffic-3.jpg') }}" alt="card-img">
-                            </div>
-
-                            <div class="card__info closed" data-card="4">
-                                <div class="card__info-body">
-                                    <h4>TEST STR.</h4>
-                                    <p>Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit.
-                                        Rem, similique.
-                                    </p>
-
-                                    <div class="card__info-more" data-more="4">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card-item">
-                            <div class="card__img">
-                                <img src="{{ asset('images/front/gallery-traffic-4.jpg') }}" alt="card-img">
-                            </div>
-                            <div class="card__info closed" data-card="5">
-                                <div class="card__info-body">
-                                    <h4>TEST STR.</h4>
-                                    <p>Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit.
-                                        Rem, similique.
-                                    </p>
-
-                                    <div class="card__info-more" data-more="5">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card-item">
-                            <div class="card__img">
-                                <img src="{{ asset('images/front/gallery-traffic-2.jpg') }}" alt="card-img">
-                            </div>
-                            <div class="card__info closed" data-card="6">
-                                <div class="card__info-body">
-                                    <h4>TEST STR.</h4>
-                                    <p>Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit.
-                                        Rem, similique.
-                                    </p>
-
-                                    <div class="card__info-more" data-more="6">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
---}}
-
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
 
                 <!-- If we need navigation buttons -->
-                <!--            <div class="swiper-button-prev"></div>-->
-                <!--            <div class="swiper-button-next"></div>-->
+{{--                            <div class="swiper-button-prev"></div>--}}
+{{--                            <div class="swiper-button-next"></div>--}}
 
                 <!-- If we need scrollbar -->
                 <!--            <div class="swiper-scrollbar"></div>-->
             </div>
-
         </div>
+        @else
+            <h2>Coming soon</h2>
+        @endif
+
     </div>
     <!--        home-gallery-i verj-->
     <!--        home-news-i skizb-->
@@ -356,9 +259,21 @@
                 </div>
             </div>
             <div class="section-2">
+                @if(!empty($allData['twitter']))
+                <a href="{{ $allData['twitter'] }}"><i class="fa fa-twitter"></i></a>
+                @else
                 <a href=""><i class="fa fa-twitter"></i></a>
+                @endif
+                @if(!empty($allData['facebook']))
+                <a href="{{ $allData['facebook'] }}"><i class="fa fa-facebook-f"></i></a>
+                @else
                 <a href=""><i class="fa fa-facebook-f"></i></a>
+                @endif
+                @if(!empty($allData['gmail']))
+                <a href="{{ $allData['gmail'] }}"><i class="fa fa-envelope"></i></a>
+                @else
                 <a href=""><i class="fa fa-envelope"></i></a>
+                @endif
             </div>
         </div>
         <div class="news-section-3">
@@ -427,6 +342,7 @@
             </ul>
         </div>
         <div class="input-section">
+            <form action=""></form>
             <label for="name"></label>
             <input class="input" type="text" placeholder="Name*" id="name">
             <label for="email"></label>
@@ -435,13 +351,9 @@
             <input class="input" type="text" placeholder="Subject*" id="subject">
             <label for="text"></label>
             <textarea name="Text" id="text" rows="50"></textarea>
-
-        </div>
-        <div class="text-input-section">
-
         </div>
         <div class="contact-btn">
-            <a class="btn send-btn" href="">Send</a>
+            <button class="btn send-btn" type="submit">Send</button>
         </div>
     </div>
     <!--        contacti verj-->
@@ -449,9 +361,21 @@
     <!--        modali skizb-->
     <div class="modal">
         <div class="section-1">
-            <a href="#"><i class="fa fa-facebook-f"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            @if(!empty($allData['facebook']))
+                <a href="{{ $allData['facebook'] }}"><i class="fa fa-facebook-f"></i></a>
+            @else
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+            @endif
+            @if(!empty($allData['instagram']))
+                <a href="{{ $allData['instagram'] }}"><i class="fa fa-instagram"></i></a>
+            @else
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            @endif
+            @if(!empty($allData['youtube']))
+                <a href="{{ $allData['youtube'] }}"><i class="fa fa-youtube-play"></i></a>
+            @else
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+            @endif
         </div>
     </div>
     <!--        modali verj-->

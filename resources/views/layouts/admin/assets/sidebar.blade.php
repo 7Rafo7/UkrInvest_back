@@ -1,6 +1,6 @@
 <div class="sidebar" data-color="orange">
     <div class="logo">
-        <a href="" class="simple-text logo-normal">
+        <a href="" class="simple-text logo-normal text-center">
             {{ __('UkrInvest Admin Panel') }}
         </a>
     </div>
@@ -51,17 +51,11 @@
                 </a>
             </li>
             <li class="@if ($activePage ?? '' == 'links') active @endif">
-                <a href="">
+                <a href="{{ route('admin.links.index') }}">
                     <i class="fa fa-list"></i>
                     <p> Links </p>
                 </a>
             </li>
-{{--            <li class="@if ($activePage ?? '' == 'Map') active @endif">--}}
-{{--                <a href="">--}}
-{{--                    <i class="fa fa-map"></i>--}}
-{{--                    <p>{{ __('Map') }}</p>--}}
-{{--                </a>--}}
-{{--            </li>--}}
         </ul>
     </div>
 </div>

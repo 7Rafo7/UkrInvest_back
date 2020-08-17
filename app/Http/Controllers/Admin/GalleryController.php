@@ -87,20 +87,19 @@ class GalleryController extends AdminBaseController
      */
     public function update(Request $request, $id)
     {
-        $file = $request->file('img');
-        $name = rand(11111, 99999) . '.' . $file->getClientOriginalExtension();
-        $request->file('img')->move('images',$name);
-//        dd($file,$name);
         $galleryItem = $this->galleryRepository->getEdit($id);
 
-        $data = $request->all();
-        $result = $galleryItem->update($data);
+        $file = $request->file('img');
+        $name = rand(11111, 99999) . '.' . $file->getClientOriginalExtension();
+        $request->file('img')->move("images", $name);
 
-//        dd(__METHOD__,$data,$result);
+        $galleryItem->title = $request->title;
+        $galleryItem->description=$request->description;
+        $galleryItem->img ='../images/'.$name;
+        $galleryItem->save();
 
-        if ($result){
-            return redirect()->route('admin.gallery.index');
-        }
+        return redirect()->route('admin.gallery.index');
+
     }
 
     /**
@@ -111,6 +110,10 @@ class GalleryController extends AdminBaseController
      */
     public function destroy($id)
     {
-        //
+        $result = Slider::destroy($id);
+
+        if ($result){
+            return redirect()->route('admin.gallery.index');
+        }
     }
 }

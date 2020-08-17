@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLinksTable extends Migration
+class CreateMessagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateLinksTable extends Migration
      */
     public function up()
     {
-        Schema::create('links', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('title');
-            $table->string('link');
+        Schema::create('messages', function (Blueprint $table) {
+            $table->bigInteger('id');
+            $table->string('msg_author');
+            $table->string('author_email');
+            $table->string('subject');
+            $table->text('msg_content');
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ class CreateLinksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('links');
+        Schema::dropIfExists('messages');
     }
 }
