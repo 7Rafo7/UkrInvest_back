@@ -31,6 +31,18 @@
 
 
 /* responsive-start*/
+@media screen and (min-width: 2560px){
+    .modal {
+        height: 120px;
+    }
+
+    .modal .section-1 {
+        width: 20%;
+    }
+    .modal .section-1 a i {
+        font-size: 40px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .modal .section-1 {
         width: 20%;
