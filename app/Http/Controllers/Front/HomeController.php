@@ -6,6 +6,7 @@ use App\Models\Link;
 use App\Models\Slider;
 use App\Repositories\front\HomePageLinksRepository;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends FrontBaseController
 {
@@ -35,6 +36,7 @@ class HomeController extends FrontBaseController
 //        dd($ytLink);
 //        dd($allLinks);
 //        dd($allData);
+
         return view('ukrinvest.front.home.index',compact(['galleryItems','allData']));
     }
 
